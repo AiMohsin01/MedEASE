@@ -1,0 +1,42 @@
+name: medease
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
+  google_sign_in: ^6.2.1
+  dotted_border: ^3.1.0
+  path_provider: ^2.0.14
+  flutter_dotenv: ^5.0.2
+  # Replaced Google AI with http for Hugging Face
+  http: ^1.2.1
+  file_picker: ^10.3.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - .env
+
+  fonts:
+    - family: Regular
+      fonts:
+        - asset: assets/fonts/InterRegular.ttf
+    - family: SamiBold
+      fonts:
+        - asset: assets/fonts/InterSemiBold.ttf
